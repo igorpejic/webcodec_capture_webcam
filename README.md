@@ -2,10 +2,10 @@
 
 ## Description
 
-This is an experimentation with the novel [WebCodec API](https://developer.chrome.com/articles/webcodecs/).
+This is an experiment with the novel [WebCodec API](https://developer.chrome.com/articles/webcodecs/).
 
-This demo uses a: Service worker to encode and decode video stream coming from a web camera.
-The background of the page is changed to mimic changes in lighting of the scene.
+This demo uses a Service worker to encode and decode the video stream coming from a web camera.
+The background of the page is changed to mimic changes in the lighting of the scene.
 
 
 The main code lives in src/ directory and contains:
@@ -16,7 +16,11 @@ The main code lives in src/ directory and contains:
 
 ## Run locally
 
-Unfortunately, Chrome does not allow service worker communication using file:// protocol (see: https://stackoverflow.com/q/21408510), so please run a local server using either:
+Will work only in Google Chrome.
+
+Grant video camera capture permission to run this experiment.
+
+Run a local server using either:
 
 ### Running locally using Python
 
@@ -30,7 +34,7 @@ or
 python -m SimpleHTTPServer 8000
 ```
 
-And navigate to http://localhost:8000/src/home.html 
+and navigate to http://localhost:8000/src/home.html 
 
 ### Running locally using Node
 
@@ -40,4 +44,4 @@ npm install
 npx http-server
 ```
 
-And navigate to http://localhost:8000/src/home.html 
+and navigate to http://localhost:8000/src/home.html 
